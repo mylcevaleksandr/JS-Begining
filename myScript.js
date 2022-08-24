@@ -1,13 +1,21 @@
-let input = "javascript is awesome";
-let result = "";
+let input = "Javascript is awesome!!!";
+let result = [];
 for(i = 0; i < input.length; i++) {
-    if(input.includes ("a")){
-        result = input.replaceAll("a", "4");}
-else if (input.includes("o")){
-    result = input.replaceAll("o", "0");}
-
-
-       
-    console.log(i);
-    console.log(result);
+    if(input[i]==="a"){
+        result.push("4")
+    }
+    else if(input[i]==="i"){
+        result.push("1")
 }
+    else if (input[i]==="o"){
+        result.push("0")    
+}
+    else {
+    result.push(input[i])
+}
+
+    
+} 
+console.log(result);
+document.getElementById("jsAwesome").innerHTML = result.join("");
+
